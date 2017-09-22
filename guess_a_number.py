@@ -1,45 +1,97 @@
 import random
+import math
+import string
+# config
+low = 1
+high = 10
+limit = math.ceil((math.log(high, 2)))
 
-#config
-high=100
-low=1
-limit=10
+# helper functions
+def show_start_screen():
+    print("""
+ _______  __   __  _______  _______  _______   _______   __    _  __   __  __   __  _______  _______  ______    __  
+|       ||  | |  ||       ||       ||       | |   _   | |  |  | ||  | |  ||  |_|  ||  _    ||       ||    _ |  |  | 
+|    ___||  | |  ||    ___||  _____||  _____| |  |_|  | |   |_| ||  | |  ||       || |_|   ||    ___||   | ||  |  | 
+|   | __ |  |_|  ||   |___ | |_____ | |_____  |       | |       ||  |_|  ||       ||       ||   |___ |   |_||_ |  | 
+|   ||  ||       ||    ___||_____  ||_____  | |       | |  _    ||       ||       ||  _   | |    ___||    __  ||__| 
+|   |_| ||       ||   |___  _____| | _____| | |   _   | | | |   ||       || ||_|| || |_|   ||   |___ |   |  | | __  
+|_______||_______||_______||_______||_______| |__| |__| |_|  |__||_______||_|   |_||_______||_______||___|  |_||__| 
+         """)
 
-#start game
-rand = random.randrange(low,high)
-print("I'm thinking of a number from " + str(low) + "to " + str(high) + ".");
-
-guess = -1
-tries = 0
-
-#helper functions
+def show_credits():
+    print("""
+ _______  ______    _______  _______  _______  _______  ______    _______  __   __       ___  __   __  _______  _______  ___  __    _ 
+|       ||    _ |  |       ||   _   ||       ||       ||      |  |  _    ||  | |  |     |   ||  | |  ||       ||       ||   ||  |  | |
+|       ||   | ||  |    ___||  |_|  ||_     _||    ___||  _    | | |_|   ||  |_|  |     |   ||  | |  ||  _____||_     _||   ||   |_| |
+|       ||   |_||_ |   |___ |       |  |   |  |   |___ | | |   | |       ||       |     |   ||  |_|  || |_____   |   |  |   ||       |
+|      _||    __  ||    ___||       |  |   |  |    ___|| |_|   | |  _   | |_     _|  ___|   ||       ||_____  |  |   |  |   ||  _    |
+|     |_ |   |  | ||   |___ |   _   |  |   |  |   |___ |       | | |_|   |  |   |   |       ||       | _____| |  |   |  |   || | |   |
+|_______||___|  |_||_______||__| |__|  |___|  |_______||______|  |_______|  |___|   |_______||_______||_______|  |___|  |___||_|  |__|
+""")
+    
 def get_guess():
     while True:
-        g=input("Take a guess: ")
+        guess = input("Guess a number: ")
 
-        if g.isnumeric():
-            g=int(g)
-            return g
+        if guess.isnumeric():
+            guess = int(guess)
+            return guess
         else:
-            print("You must enter a number")
+            print("You must enter a number.")
 
-#play the game
-while guess != rand and tries < limit:
-    guess = get_guess()
-    
-    guess = input("Take a guess: ")
-    guess = int(guess)
-    
+def pick_number():
+    print("I'm thinking of a number from " + str(low) + " to " + str(high) +". You will get " + str(limit) + " tries to guess the right answer!")
+
+    return random.randint(low, high)
+
+def check_guess(guess, rand):
     if guess < rand:
         print("You guessed too low.")
     elif guess > rand:
         print("You guessed too high.")
 
-    tries += 1
+def show_result(guess, rand):
+    if guess == rand:
+        print("You win!")
+    else:
+        print("You are such a loser! The number was " + str(rand) + ".")
 
-#tell player outcome
-if guess == rand:
-    print("You win!")
+def play_again():
+    while True:
+        decision = input("Would you like to play again? (y/n) ").lower()
 
-else:
-    print("You lose. I was thinking of " +str(rand)+ ".")
+        if decision == 'y' or decision == 'yes':
+            return True
+        elif decision == 'n' or decision == 'no':
+            return False
+        else:
+            print("I don't understand. Please enter 'y' or 'n'.").lower()
+
+def play():
+    guess = -1
+    tries = 0
+
+    rand = pick_number()
+    
+    while guess != rand and tries < limit:
+        guess = get_guess()
+        print()
+        check_guess(guess, rand)
+
+        tries += 1
+
+    show_result(guess, rand)
+
+
+# Game starts running here
+show_start_screen()
+print()
+print()
+playing = True
+
+while playing:
+    play()
+    playing = play_again()
+print()
+print()
+show_credits()
