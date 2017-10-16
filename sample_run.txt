@@ -1,0 +1,115 @@
+_______  __   __  _______  _______  _______    _______    __    _  __   __  __   __  _______  _______  ______      _______        ___
+|       ||  | |  ||       ||       ||       |  |   _   |  |  |  | ||  | |  ||  |_|  ||  _    ||       ||    _ |    |   _   |      |   |
+|    ___||  | |  ||    ___||  _____||  _____|  |  |_|  |  |   |_| ||  | |  ||       || |_|   ||    ___||   | ||    |  |_|  |      |   |
+|   | __ |  |_|  ||   |___ | |_____ | |_____   |       |  |       ||  |_|  ||       ||       ||   |___ |   |_||_   |       |      |   |
+|   ||  ||       ||    ___||_____  ||_____  |  |       |  |  _    ||       ||       ||  _   | |    ___||    __  |  |       | ___  |   |  ___
+|   |_| ||       ||   |___  _____| | _____| |  |   _   |  | | |   ||       || ||_|| || |_|   ||   |___ |   |  | |  |   _   ||   | |   | |   |
+|_______||_______||_______||_______||_______|  |__| |__|  |_|  |__||_______||_|   |_||_______||_______||___|  |_|  |__| |__||___| |___| |___|
+
+Hello, welcome to Guess a Number A.I. What is your name? Justin
+
+Hello Justin, would you like to pick the numbers for your game? y
+
+What is the lowest value for of number? 1
+
+What is the highest value of your number? 100
+
+Justin think of a number between 1 and 100.
+Press 'Enter' when ready...
+
+Is the number....
+50?
+I have guessed 1/7 times
+Tell me if my number was too high, too low, or right, Justin. h
+
+Is the number....
+25?
+I have guessed 2/7 times
+Tell me if my number was too high, too low, or right, Justin. l
+
+Is the number....
+37?
+I have guessed 3/7 times
+Tell me if my number was too high, too low, or right, Justin. h
+
+Is the number....
+31?
+I have guessed 4/7 times
+Tell me if my number was too high, too low, or right, Justin. h
+
+Is the number....
+28?
+I have guessed 5/7 times
+Tell me if my number was too high, too low, or right, Justin. h
+
+Is the number....
+26?
+I have guessed 6/7 times
+Tell me if my number was too high, too low, or right, Justin. right
+
+
+I guessed your number in only 7/7 tries.
+
+Your number was 26 that was too easy.
+C'mon Justin, you know you can't beat me.
+
+Would you like to play again Justin? (y/n) y
+
+Hello, welcome to Guess a Number A.I. What is your name? Justin
+
+Hello Justin, would you like to pick the numbers for your game? y
+
+What is the lowest value for of number? 5
+
+What is the highest value of your number? 70
+
+Justin think of a number between 5 and 70.
+Press 'Enter' when ready...
+
+Is the number....
+37?
+I have guessed 1/7 times
+Tell me if my number was too high, too low, or right, Justin. h
+
+Is the number....
+21?
+I have guessed 2/7 times
+Tell me if my number was too high, too low, or right, Justin. l
+
+Is the number....
+29?
+I have guessed 3/7 times
+Tell me if my number was too high, too low, or right, Justin. l
+
+Is the number....
+33?
+I have guessed 4/7 times
+Tell me if my number was too high, too low, or right, Justin. h
+
+Is the number....
+31?
+I have guessed 5/7 times
+Tell me if my number was too high, too low, or right, Justin. h
+
+Is the number....
+30?
+I have guessed 6/7 times
+Tell me if my number was too high, too low, or right, Justin. right
+
+
+I guessed your number in only 7/7 tries.
+
+Your number was 30 that was too easy.
+C'mon Justin, you know you can't beat me.
+
+Would you like to play again Justin? (y/n) n
+
+Goodbye. Good luck Justin on whatever you do.
+
+
+███╗   ███╗ █████╗ ██████╗ ███████╗    ██████╗ ██╗   ██╗         ██╗██╗   ██╗███████╗████████╗██╗███╗   ██╗    ██╗  ██╗ █████╗ ████████╗██╗     ███████╗██╗   ██╗
+████╗ ████║██╔══██╗██╔══██╗██╔════╝    ██╔══██╗╚██╗ ██╔╝         ██║██║   ██║██╔════╝╚══██╔══╝██║████╗  ██║    ██║  ██║██╔══██╗╚══██╔══╝██║     ██╔════╝╚██╗ ██╔╝
+██╔████╔██║███████║██║  ██║█████╗      ██████╔╝ ╚████╔╝          ██║██║   ██║███████╗   ██║   ██║██╔██╗ ██║    ███████║███████║   ██║   ██║     █████╗   ╚████╔╝
+██║╚██╔╝██║██╔══██║██║  ██║██╔══╝      ██╔══██╗  ╚██╔╝      ██   ██║██║   ██║╚════██║   ██║   ██║██║╚██╗██║    ██╔══██║██╔══██║   ██║   ██║     ██╔══╝    ╚██╔╝
+██║ ╚═╝ ██║██║  ██║██████╔╝███████╗    ██████╔╝   ██║       ╚█████╔╝╚██████╔╝███████║   ██║   ██║██║ ╚████║    ██║  ██║██║  ██║   ██║   ███████╗███████╗   ██║
+╚═╝     ╚═╝╚═╝  ╚═╝╚═════╝ ╚══════╝    ╚═════╝    ╚═╝        ╚════╝  ╚═════╝ ╚══════╝   ╚═╝   ╚═╝╚═╝  ╚═══╝    ╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝   ╚══════╝╚══════╝   ╚═╝              
